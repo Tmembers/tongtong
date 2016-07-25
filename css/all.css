@@ -1,0 +1,164 @@
+body,ul,li,form,h2,h3,p{
+    margin:0;
+    padding:0;
+}
+html,body{
+    width:100%;
+    height:100%;
+    font-family: 黑体 微软雅黑 Arial sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+/*header*/
+.header-out{
+    width:100%;
+    height:36px;
+    background-color:#f8f8f8;
+}
+.header{
+    width:1200px;
+    height: 100%;
+    margin:0 auto;
+}
+.header .header-content{
+    float:right;
+    margin: 10px;
+}
+.header .header-content span{
+    display: inline-block;
+}
+.header .header-content span a{
+    color:#a1a1a1;
+    font-size:14px;
+}
+.header .header-content span.header-content-1{
+    border-right:1px solid #a1a1a1;
+    padding-right: 18px;
+}
+.header .header-content span.header-content-2{
+    padding-left: 18px;
+}
+
+/*body.nav*/
+.body .nav,.body .nav_manager{
+    width:1200px;
+    height:116px;
+    margin:0 auto;
+}
+.body .nav img,.body .nav_manager img{
+    float:left;
+    margin:35px 10px;
+}
+.body .nav ul li,.body .nav_manager ul li{
+    float:right;
+    margin-top: 46px;
+    margin-left:67px;
+}
+.body .nav ul,.body .nav_manager ul{
+    height:100%;
+    width:1000px;
+    float:right;
+}
+.body .nav ul li a:link,.body .nav ul li a:visited,.body .nav_manager ul li a:link,.body .nav_manager ul li a:visited{
+    padding:0 18px 30px 18px;
+    font-weight:bold;
+    color:#a1a1a1;
+}
+.body .nav ul li a:hover,.body .nav ul li a:active,.body .nav_manager ul li a:hover,.body .nav_manager ul li a:active{
+    color:#175b98;
+    border-bottom: 2px solid #175b98;
+}
+
+/*登陆成功页面*/
+.login_form{
+    position: absolute;
+    top:116px;
+    left:64px;
+    line-height: 36px;
+    font-weight: bold;
+}
+.login_nav{
+    float:right;
+    margin: 10px 20px 10px 10px;
+}
+.login_nav span{
+    display: inline-block;
+}
+.login_nav  a{
+    color:#a1a1a1;
+    font-size:14px;
+}
+.login_nav span.header-content-1{
+    border-right:1px solid #a1a1a1;
+    padding-right: 18px;
+    position: relative;
+}
+.login_nav span.header-content-1 span{
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:-8px;
+    left:26px;
+    color:#fff;
+    font-size:10px;
+}
+.login_nav span.header-content-2{
+    padding-left: 18px;
+    padding-right: 70px;
+}
+.login_nav a.quite{
+    background: url('../imgs/quite.png') no-repeat;
+    padding-left:26px;
+}
+
+
+/*foot*/
+.footer{
+    width:100%;
+    height:164px;
+    background-color:#272930;
+}
+.footer .footer-container{
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+    color:#a1a1a1;
+    font-weight: bold;
+    font-size:14px;
+}
+.footer .footer-container ul{
+    padding-top:46px;
+}
+.footer .footer-container ul li{
+    float:left;
+    border-right:1px solid #a1a1a1;
+    padding: 0 20px;
+}
+.footer .footer-container  a:hover,.footer .footer-container a:active,.body .body-link a:hover ,.body .body-link a:active{
+    color:#175b98;
+}
+.footer .footer-container ul li.ul-first{
+    padding-left: 10px;
+}
+.footer .footer-container ul li.ul-last{
+    border-right:none;
+}
+.footer .footer-container p.concat{
+    float:right;
+    margin-right:10px;
+}
+.footer .footer-container p .tel{
+    font-size:20px;
+}
+.footer .footer-container .footer-bottom{
+    text-align: center;
+    padding-top:50px;
+}
+.footer .footer-container a{
+    color:#a1a1a1;
+}

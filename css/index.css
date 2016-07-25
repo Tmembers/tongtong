@@ -1,0 +1,161 @@
+/*body*/
+.body .banner-out{
+    width:100%;
+    background: url('../imgs/banner.png') repeat-x;
+}
+.body .banner{
+    width:1200px;
+    height:428px;
+    margin:0 auto;
+    background: url("../imgs/background.jpg") no-repeat center;
+    color:white;
+    position:relative;
+}
+.body .banner .text{
+    width:290px;
+    position:absolute;
+    top:150px;
+    left:492px;
+}
+.body .banner .text .p1{
+    margin-bottom:38px;
+    font-size:52px;
+}
+.body .banner .text .p2{
+    margin-bottom:38px;
+    font-size:24px;
+}
+.body .banner .login-register{
+    width:340px;
+    height:334px;
+    float:right;
+    margin-right:50px;
+    margin-top:42px;
+    position: relative;
+}
+.body .banner .login-register .black_back{
+    width:100%;
+    height:100%;
+    background-color: black;
+    filter:alpha(opacity=30);
+    -moz-opacity:0.3;
+    -khtml-opacity: 0.3;
+    opacity: 0.3;
+    z-index:-1;
+}
+.body .banner .login-register form{
+    position: absolute;
+    top:0;
+    left:0;
+    display: block;
+}
+.body .banner .login-register h3{
+    text-align:center;
+    margin:30px auto;
+    font-size:18px;
+}
+.body .banner .login-register input,.body .banner .login-register button{
+    width:258px;
+    height:50px;
+    margin-left:32px;
+    margin-bottom:13px;
+    border-radius: 4px;
+    border:none;
+    color:#a1a1a1;
+    padding:0px 10px;
+    font-size:16px;
+}
+.body .banner .login-register button{
+    width:278px;
+    background-color: #448aca;
+    color:white;
+    cursor: pointer;
+}
+.body .banner .login-register div .reg{
+    float:left;
+    padding-left:32px;
+    font-size:16px;
+}
+.body .banner .login-register div .forgot{
+    float:right;
+    padding-right:32px;
+    font-size:16px;
+}
+.body .body-content1{
+    width:1200px;
+    height:482px;
+    margin:0 auto;
+}
+.body .body-content1 h2,.body .body-content2 h2{
+    text-align: center;
+    margin:64px auto;
+    font-weight: lighter;
+}
+.body .body-content1 div,.body .body-content2 div{
+    width:300px;
+    float:left;
+    text-align: center;
+}
+.body .body-content1 div span{
+   display: inline-block;
+    width:133px;
+    height:153px;
+    overflow: hidden;
+    background-image: url('../imgs/雪碧图133-153-4.png');
+    background-repeat:no-repeat;
+    background-position: top;
+}
+.body .body-content1 div span.img2{
+    background-position:0 -154px;
+}
+.body .body-content1 div span.img3{
+    background-position:0 -307px;
+}
+.body .body-content1 div span.img4{
+    background-position:0 -460px;
+}
+.body .body-content1 div p{
+    margin:16px auto;
+    font-size:22px;
+}
+.body .body-content1 h2,.body .body-content2 h2,.body .body-content1 div p.p1{
+    font-family: 黑体;
+}
+.body .banner .login-register div a,.body .body-content1 div p.p2,.footer .footer-container a{
+    color:#a1a1a1;
+}
+.body .body-content2-outer{
+    width:100%;
+    height:628px;
+    margin-top:-64px;
+    background-color: #f5f5f5;
+ }
+.body .body-content2{
+    width:1200px;
+    height:100%;
+    margin: 0 auto;
+}
+.body .body-content2 div.whole{
+    /*position: relative;*/
+    height:300px;
+}
+.body .body-content2 div img{
+    width:100%;
+    height:100%;
+    text-align:center;
+    vertical-align: middle;
+}
+.body .body-content2 h2{
+    padding-top:64px;
+}
+.body .body-content2 button{
+    width:186px;
+    height:36px;
+    background-color:#448aca;
+    color:white;
+    border:none;
+    margin: 54px 507px;
+    cursor: pointer;
+}
+
+
