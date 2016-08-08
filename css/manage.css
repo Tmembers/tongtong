@@ -1,0 +1,190 @@
+.use{
+    width:100%;
+    height: 100%;
+    background-color: #f5f5f5;
+}
+.use #manager_index  .body-content1-outer{
+    width:100%;
+    background-color: #fff;
+    padding-top:1px;
+}
+.use .useManage .left ul{
+    margin:10px 18px;
+}
+.use .useManage .left ul li{
+    height: 25px;
+    border-bottom: 1px solid #e8e8e8;
+    text-align: center;
+    margin:20px auto;
+    padding:13px 0px;
+    color:#a1a1a1;
+}
+.use .useManage .left ul li:hover,.use .useManage .left ul li:active{
+    cursor: pointer;
+}
+.use .useManage .left ul li.user{
+    color:#175b98;
+    background: url('../imgs/user_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.tong{
+    background: url('../imgs/untong_ico.jpg') no-repeat 60px 10px;
+}
+
+.use .useManage .right_users,.use .useManage .right_user,.use .useManage .right_tong,.use .useManage .right{
+    width:800px;
+    min-height: 540px;
+    background-color: #fff;
+    float:right;
+    border:1px solid #e8e8e8;
+    border-top:none;
+    padding:25px 44px;
+    position: relative;
+}
+
+/*用户信息*/
+.use .useManage .right_users .search{
+    height:42px;
+    width:96%;
+    border:1px solid #e8e8e8;
+    padding:0 10px;
+
+}
+.use .useManage .right_users img{
+    position: absolute;
+    top:38px;
+    left:90%;
+    cursor: pointer;
+}
+.use .useManage .right_users table{
+    margin-top:16px;
+}
+table.users_manage,table.tongs_manage,table.tong_all_index,table.tong_all_content{
+    text-align: center;
+}
+.use .useManage .right_users table td{
+    padding:0 70px;
+}
+.use .useManage .right_users table.tongs_manage td{/*用户通管理*/
+    padding:0 22px;
+}
+
+.use .useManage  table{
+    line-height:45px;
+}
+#set_email p,#set_tel p,#set_secret p{
+    padding-bottom: 14px;
+}
+#set_email table,#set_tel table,#set_secret table{
+    line-height: 62px;
+}
+
+ button.look,button.look_out{
+    padding:5px 10px;
+    margin-left:30px;
+    font-weight: bold;
+}
+.use .useManage .right_user table td button,.use .useManage .right_tong table td button{
+    background-color:#175a98;
+    color:#fff;
+    padding:10px 30px;
+    margin-right:30px;
+    margin-top:12px;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.use .useManage  table td button.back{
+    background-color:#e6780d;
+}
+.use .useManage .right_tong table td button{
+    padding:10px 30px;
+    margin-top:8px;
+}
+
+.use .useManage .right_users #users_manage table.users_manage td{
+    padding:0 72px;
+}
+.use .useManage .right_users  table#users_apply td{
+    padding:0 56px;
+}
+.use .useManage .right_users table.padding_36 td{
+    padding:0 36px;
+}
+.use .useManage .left ul li.user{
+    color:#175b98;
+    background: url('../imgs/user_authentication_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.tong{
+    background: url('../imgs/untong_authentication_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.account{
+    background: url('../imgs/unaccount_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.account_selected{
+    color:#175b98;
+    background: url('../imgs/account_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.security{
+    background: url('../imgs/unsecurity_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage .left ul li.security_selected{
+    color:#175b98;
+    background: url('../imgs/security_ico.jpg') no-repeat 60px 10px;
+}
+.use .useManage  table td button.cancel{
+    background-color: #a1a1a1;
+}
+.use .useManage .account{
+    text-align: center;
+    margin:110px auto;
+}
+.use .useManage .account p{
+    padding-bottom:40px;
+}
+.use .useManage .account .update{
+    padding:6px 32px;
+    margin:0 auto;
+    background-color: #175b98;
+    color:#fff;
+    border:none;
+    cursor: pointer;
+}
+
+.business_license{
+    border:1px solid #e8e8e8;
+}
+
+#set_email table,#set_tel table,#set_secret table{
+    margin-left:75px;
+
+}
+.code{
+    display: inline-block;
+    width:65px;
+    line-height:30px;
+    padding:0 10px;
+    margin:0 18px;
+    background: url('../imgs/验证码背景.jpg') no-repeat;
+    font-size:25px;
+    border:1px solid #e8e8e8;
+    text-align: center;
+    vertical-align: middle;
+}
+#set_email input,#set_tel input,#set_secret input{
+    width:180px;
+    height:30px;
+    background-color: #f5f5f5;
+    border: 1px solid #e8e8e8;
+}
+#set_email .email_send,#set_tel .email_send,#ordinary_sets_content .email_send{
+    background-color: #f5f5f5;
+    border: 1px solid #e8e8e8;
+    color:#000;
+    font-weight: bold;
+}
+#set_email button,#set_tel button{
+    cursor:pointer;
+}
+.set_user_status input{
+    margin-right:5px;
+}

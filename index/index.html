@@ -6,53 +6,42 @@
     <title>井通银关</title>
     <link rel="stylesheet" type="text/css" href="../css/all.css">
     <link rel="stylesheet" type="text/css" href="../css/index.css">
+    <script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 <body>
     <div class="header-out">
             <div class="header" >
                 <div class="header-content" id="header">
-                    <span class="header-content-1"><a name="load" id="header_load" href="./load.html">登陆</a></span>
+                    <span class="header-content-1"><a name="load" id="header_load" href="./load.html">登录</a></span>
                     <span class="header-content-2"><a name="register" id="header_register" href="./register.html">注册</a></span>
-                </div>
-                <div class="login_nav"  id="header_manager" style="display: none">
-                    <span class="header-content-1"><a name="load"  href="###">消息<span>10</span></a></span>
-                    <span class="header-content-2"><a name="register" href="###">XXX</a></span>
-                    <a href="index.html" class="quite">退出</a>
                 </div>
             </div>
         </div>
     <div class="body">
-        <div class="nav" id="nav" style="display: block">
+        <div class="nav" id="nav" >
                 <a href="./index.html"><img src="../imgs/logo.png" alt="logo"></a>
-                <ul>
+                <ul id="unload_nav_lists">
                     <li class="li-last"><a href="###">最新咨询</a></li>
                     <li><a href="###">用户支持</a></li>
                     <li><a href="###">新手指导</a></li>
-                    <li><a href="index.html">首页</a></li>
+                    <li><a href="./index.html" class="selected">首页</a></li>
                 </ul>
             </div>
-        <div class="nav_manager" id="nav_manager" style="display: none;">
-            <a href="###"><img src="../imgs/logo.png" alt="logo"></a>
-            <ul>
-                <li class="li-last"><a href="###">账号设置</a></li>
-                <li><a href="###">申请管理</a></li>
-                <li><a href="./manager/use_user.html">使用管理</a></li>
-                <li><a href="###">首页</a></li>
-            </ul>
-        </div>
-        <div class="banner-out">
+        <div class="index_content" id="index_content" style="display: block">
+            <div class="banner-out">
                 <div class="banner">
                     <div class="text">
                         <p class="p1">井通银关</p>
                         <p class="p2">专业、专注、极致、高效</p>
                     </div>
                     <div class="login-register" >
-                        <div class="black_back" id="black_back"></div>
+                        <div class="black_back" id="black_back">
+                        </div>
                         <form id="form" name="load_form" action="###" method="post">
-                            <h3>用户登陆</h3>
-                            <input class="user"  type="text" placeholder="请输入用户名">
-                            <input class="psd"  type="password" placeholder="请输入密码">
-                            <button id="load" type="button">登陆</button>
+                            <h3>用户登录</h3>
+                            <input class="user" id="user" type="text" placeholder="请输入用户名">
+                            <input class="psd" id="psd"  type="password" placeholder="请输入密码">
+                            <button id="load" type="button">登录</button>
                             <div>
                                 <span class="reg"><a href="./register.html">免费注册</a></span>
                                 <span class="forgot"><a href="./forgot_secret.html">忘记密码？</a></span>
@@ -61,7 +50,7 @@
                     </div>
                 </div>
             </div>
-        <div class="body-content1">
+            <div class="body-content1">
                 <h2>顶级的区块链技术提供商</h2>
                 <div>
                     <span class="img1"></span>
@@ -84,24 +73,98 @@
                     <p class="p2"> Convenient</p>
                 </div>
             </div>
-        <div class="body-content2-outer">
+            <div class="body-content2-outer">
                 <div class="body-content2">
                     <h2>顶级风投，合作伙伴</h2>
-                    <div class="whole"><img src="../imgs/photo1.png" alt=""><div class="blue_back"></div></div>
-                    <div class="whole"><img src="../imgs/photo2.png" alt=""><div class="blue_back"></div></div>
-                    <div class="whole"><img src="../imgs/photo3.png" alt=""><div class="blue_back"></div></div>
-                    <div class="whole"><img src="../imgs/photo4.png" alt=""><div class="blue_back"></div></div>
+                    <div class="whole"><img src="../imgs/photo1.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo2.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;" >FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo3.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo4.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
                     <button onclick="location='./register.html'">马上注册</button>
                 </div>
             </div>
+        </div>
+        <div class="guide_content_out" id="guide_content_out" style="display: none">
+            <div class="guide_content">
+                <div class="guide_left">
+                    <h2 class="guide_title">新手指导</h2>
+                    <p>欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。欢迎来到井通科技，这里是新手指导具体内容。</p>
+                </div>
+                <div class="guide_right">
+                    <div class="guide_right_top">
+                        <a href="./load.html" class="load">登录</a>
+                        <a href="./register.html" class="register">注册</a>
+                    </div>
+                    <div class="guide_right_bottom">
+                        <h3>推荐关注</h3>
+                        <img src="../imgs/photo3.png" alt="">
+                        <p>内容信息XXXXXXXXXXXXXXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="supply_content_out" id="supply_content_out" style="display: none">
+           <div class="supply_content">
+               <div class="black_back"></div>
+               <div class="supply_concat">
+                   <h3>联系方式</h3>
+                   <table>
+                       <tr>
+                           <td class="supply_content_left">电话:</td>
+                           <td>400-800-800</td>
+                       </tr>
+                       <tr>
+                           <td class="supply_content_left">邮件:</td>
+                           <td>service@jingtumlabs.com(一般查询及投诉建议)</td>
+                       </tr>
+                       <tr>
+                           <td class="supply_content_left">企业认证:</td>
+                           <td>corporate@jingtumlabs.com</td>
+                       </tr>
+                       <tr>
+                           <td class="supply_content_left">地址：</td>
+                           <td>北京市朝阳区大屯里317号楼金泉时代1单元2611</td>
+                       </tr>
+                   </table>
+               </div>
+               <div class="supply_follow" >
+                   <h3>关注我们</h3>
+                   <p>微博&nbsp<a href="#">+关注</a></p>
+                   <p>公众微信号</p>
+                   <img src="../imgs/weixin.jpg" alt="微信公众号">
+               </div>
+               <div class="supply_map" id="new_map">
+                   <!--<img class="map" src="../imgs/map.jpg" alt="百度地图">-->
+               </div>
+           </div>
+        </div>
+        <div class="latest_content_out" id="latest_content_out" style="display: none;">
+            <div class="guide_content">
+                <div class="guide_left">
+                    <h2 class="latest_title">区块链技术最新资讯</h2>
+                    <p>欢迎来到井通科技，这里是区块链技术最新资讯具体内容。欢迎来到井通科技，这里是区块链技术最新资讯具体内容。欢迎来到井通科技，这里是区块链技术最新资讯具体内容。欢迎来到井通科技，这里是区块链技术最新资讯具体内容。欢迎来到井通科技，这里是区块链技术最新资讯具体内容。欢迎来到井通科技，这里是区块链技术最新资讯具体内容。</p>
+                </div>
+                <div class="guide_right">
+                    <div class="guide_right_top">
+                        <a href="./load.html" class="load">登录</a>
+                        <a href="./register.html" class="register">注册</a>
+                    </div>
+                    <div class="guide_right_bottom">
+                        <h3>推荐关注</h3>
+                        <img src="../imgs/photo3.png" alt="">
+                        <p>内容信息XXXXXXXXXXXXXXXX</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
     <div class="footer">
             <div class="footer-container">
                 <ul>
-                    <li class="ul-first"><a href="###">关于我们</a></li>
-                    <li><a href="###">投诉建议</a></li>
-                    <li><a href="###">常见问题</a></li>
-                    <li class="ul-last"><a href="###">联系我们</a></li>
+                    <li class="ul-first"><a href="./about_us.html">关于我们</a></li>
+                    <li><a href="./normal_question.html">常见问题</a></li>
+                    <li class="ul-last"><a href="./contact_us.html">联系我们</a></li>
                 </ul>
                 <p class="concat">
                     <span>联系我们：</span>

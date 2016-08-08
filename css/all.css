@@ -5,7 +5,7 @@ body,ul,li,form,h2,h3,p{
 html,body{
     width:100%;
     height:100%;
-    font-family: 黑体 微软雅黑 Arial sans-serif;
+    font-family: '微软雅黑 Regular', 'Microsoft Yahei', '微软雅黑','黑体',sans-serif;
 }
 ul{
     list-style: none;
@@ -66,15 +66,14 @@ a{
 }
 .body .nav ul li a:link,.body .nav ul li a:visited,.body .nav_manager ul li a:link,.body .nav_manager ul li a:visited{
     padding:0 18px 30px 18px;
-    font-weight:bold;
     color:#a1a1a1;
 }
-.body .nav ul li a:hover,.body .nav ul li a:active,.body .nav_manager ul li a:hover,.body .nav_manager ul li a:active{
+.body .nav ul li a:hover,.body .nav ul li a:active,.body .nav ul li a.selected,.body .nav_manager ul li a:hover,.body .nav_manager ul li a:active,.body .nav_manager ul li a.selected{
     color:#175b98;
     border-bottom: 2px solid #175b98;
 }
 
-/*登陆成功页面*/
+/*登录成功页面*/
 .login_form{
     position: absolute;
     top:116px;
@@ -117,6 +116,104 @@ a{
 }
 
 
+/*表格中，行背景变灰*/
+.back_grey{
+    background-color: #fafafa;
+}
+
+/*上一页，下一页格式设置*/
+.use .useManage .right_users ul,.use .useManage .right .tong_all ul{
+    width:400px;
+    height: 100%;
+    margin:35px auto;
+}
+.use .useManage .right_users  ul li,.use .useManage .right .tong_all ul li{
+    float: left;
+    margin:0 7px;
+}
+.use .useManage .right_users  ul li a,.use .useManage .right .tong_all ul li a{
+    color: #a1a1a1;
+}
+.use .useManage .right_users  ul li.num a,.use .useManage .right .tong_all ul li.num a{
+    border:1px solid #a1a1a1;
+    padding:0 4px;
+}
+
+/*表格表头格式*/
+table tr.title{
+    background-color: #e8e8e8;
+    color: #a1a1a1;
+    font-weight:bold;
+}
+
+/*表格第一列右对齐*/
+table td.td_left{
+    padding-right:35px;
+    float:right;
+}
+table textarea{
+    border-color:#e8e8e8;
+    margin-top:12px;
+}
+/*详细信息p标签*/
+ p.title_p{
+    height:38px;
+    border-bottom:1px solid #e8e8e8;
+    margin-bottom:21px;
+    vertical-align: middle;
+    font-weight: bold;
+    color: #a1a1a1;
+}
+.use .useManage .right_user p span,.use .useManage .right_tong p span,.use .useManage .right .tong_all_details p span{
+    color:#175b98;
+}
+
+/*安全设置通用格式*/
+.use .useManage .right_users .bind{
+    font-weight: bold;
+    line-height: 72px;
+    font-size: 18px;
+}
+.use .useManage .right_users .true{
+    padding:8px 35px;
+    background: url('../imgs/对钩.jpg') no-repeat 16px;
+}
+.use .useManage .right_users .false{
+    padding:8px 35px;
+    background: url('../imgs/叹号.jpg') no-repeat 16px;
+}
+.use .useManage .right_users .status{
+    color:#a1a1a1;
+    max-width: 300px;
+}
+.use .useManage .right_users .update_sets a{
+    color: #175a98;
+    font-weight: bold;
+}
+
+/*通用格式*/
+.use .useManage{
+    width:1200px;
+    height:100%;
+    margin:12px auto;
+    padding-top:5px;
+    overflow: hidden;
+}
+hr{
+    width:1200px;
+    margin:18px auto 0;
+    border-top:2px solid #448aca;
+}
+.use .useManage .left{
+    width:300px;
+    height:340px;
+    background-color: #fff;
+    float:left;
+    border:1px solid #e8e8e8;
+    border-top:none;
+}
+
+
 /*foot*/
 .footer{
     width:100%;
@@ -128,7 +225,6 @@ a{
     height:100%;
     margin: 0 auto;
     color:#a1a1a1;
-    font-weight: bold;
     font-size:14px;
 }
 .footer .footer-container ul{
@@ -161,4 +257,7 @@ a{
 }
 .footer .footer-container a{
     color:#a1a1a1;
+}
+table{
+    border-spacing: 1px;
 }

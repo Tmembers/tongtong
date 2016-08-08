@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>管理员</title>
+    <link rel="stylesheet" type="text/css" href="../css/all.css">
+    <link rel="stylesheet" type="text/css" href="../css/manage.css">
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+<div class="header-out">
+    <div class="header" >
+        <div class="login_nav"  id="header_manager">
+            <span class="header-content-1"><a name="load"  href="###">消息<span>10</span></a></span>
+            <span class="header-content-2"><a name="register" href="###">XXX</a></span>
+            <a href="index.html" class="quite">退出</a>
+        </div>
+    </div>
+</div>
+<div class="body" id="body">
+    <div class="nav_manager" id="nav_manager">
+        <a href="./manage.html?user=manage"><img src="../imgs/logo.png" alt="logo"></a>
+        <ul id="nav_lists">
+            <li class="li-last"><a href="###">账号设置</a></li>
+            <li><a href="#">申请管理</a></li>
+            <li><a href="#" >使用管理</a></li>
+            <li><a href="./manage.html?user=manage" class="selected">首页</a></li>
+        </ul>
+    </div>
+    <div class="use">
+        <div id="manager_index">
+            <div class="banner-out">
+                <div class="banner">
+                    <div class="text">
+                        <p class="p1">井通银关</p>
+                        <p class="p2">专业、专注、极致、高效</p>
+                    </div>
+                    <div class="login-register" >
+                        <div class="black_back" id="black_back">
+                            <div class = 'login_form'>
+                                <p>欢迎回来，XXX！<span style="color:red">（已认证）</span></p>
+                                <p>已发行通：XX！</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content1-outer">
+                <div class="body-content1">
+                    <h2>顶级的区块链技术提供商</h2>
+                    <div>
+                        <span class="img1"></span>
+                        <p class="p1">安全</p>
+                        <p class="p2"> Security</p>
+                    </div>
+                    <div>
+                        <span class="img2"></span>
+                        <p class="p1">可靠</p>
+                        <p class="p2"> Reliable</p>
+                    </div>
+                    <div>
+                        <span class="img3"></span>
+                        <p class="p1">贴心</p>
+                        <p class="p2"> Intimate</p>
+                    </div>
+                    <div>
+                        <span class="img4"></span>
+                        <p class="p1">便捷</p>
+                        <p class="p2"> Convenient</p>
+                    </div>
+                </div>
+            </div>
+            <div class="body-content2-outer">
+                <div class="body-content2">
+                    <h2>顶级风投，合作伙伴</h2>
+                    <div class="whole"><img src="../imgs/photo1.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo2.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;" >FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo3.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
+                    <div class="whole"><img src="../imgs/photo4.png" alt=""><div class="blue_back"></div><div class="font_back"><span class="contain_logo"></span><span class="contain_content" >井通银关</span><span class="contain_content" style="font-size:22px;">FINGATE</span></div><div class="black_back_div"></div></div>
+                    <button onclick="location='./register.html'">马上注册</button>
+                </div>
+            </div>
+        </div>
+        <div class="useManage" id="use_manage" style="display: none">
+            <hr>
+            <div class="left">
+                <ul>
+                    <li class="user" id="user_selected">用户管理</li>
+                    <li class="tong" id="tong_selected">用户通管理</li>
+                </ul>
+            </div>
+            <div class="right_users" id="right_users_use" style="display:block"><!--用户信息-->
+                <input name="search" class="search" type="text">
+                <img src="../imgs/search_ico.jps" alt="search">
+                <table class="users_manage" id="users_manage" style="display: block;">
+                    <tr class="title">
+                        <td>用户名</td>
+                        <td>企业名称</td>
+                        <td>状态</td>
+                        <td>详情</td>
+                    </tr>
+                    <tr>
+                        <td>张小珊</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>吴可</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>张小珊</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>吴可</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>张小珊</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>吴可</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>张小珊</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>吴可</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>张小珊</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>吴可</td>
+                        <td>XXXXX</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details">查看</a></td>
+                    </tr>
+                </table>
+                <table class="tongs_manage" id="tongs_manage" style="display: none">
+                    <tr class="title">
+                        <td>用户通名称</td>
+                        <td>企业名称</td>
+                        <td>用户通类型</td>
+                        <td>信用额度</td>
+                        <td>已发行额度</td>
+                        <td>状态</td>
+                        <td>详情</td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>永辉超市</td>
+                        <td>融资通</td>
+                        <td>1000000</td>
+                        <td>1000</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="tong_details">查看</a></td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">上一页</a></li>
+                    <li class="num"><a href="#">1</a></li>
+                    <li class="num"><a href="#">2</a></li>
+                    <li class="num"><a href="#">3</a></li>
+                    <li><a href="#">下一页</a></li>
+                    <li><a href="#">尾页</a></li>
+                </ul>
+            </div>
+            <div class="right_user" id="right_user_use" style="display: none;"><!--用户详细信息-->
+                <p class="title_p">用户管理&nbsp <span>>&nbsp 用户详细信息</span></p>
+                <table>
+                    <tr>
+                        <td class="td_left">用户账号：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">公司名称：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">营业执照号：</td>
+                        <td>XXXXXXXXXXXXXXXXXX <button class="look">查看营业执照</button><button class="look_out" style="display: none;">收起营业执照</button></td>
+                    </tr>
+                    <tr >
+                        <td></td>
+                        <td><img src="../imgs/logo.png" alt="营业执照"  class="business_license" style="display: none;"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">联系人：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">联系电话：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">企业描述：</td>
+                        <td><textarea name="description" id="" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr class="set_user_status">
+                        <td class="td_left">设置状态：</td>
+                        <td><input type="radio" name="set_user_status" >冻结帐户&nbsp&nbsp<input type="radio" name="set_user_status" >解冻帐户&nbsp&nbsp<input type="radio" name="set_user_status" >设为管理员</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>确定</button><button class="back" id="user_back">返回</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_tong" id="right_tong_use" style="display: none;"><!--用户通详细信息-->
+                <p class="title_p">用户通管理&nbsp <span>>&nbsp 用户通详细信息</span></p>
+                <table>
+                    <tr>
+                        <td class="td_left">用户账号：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">公司名称：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通名称：</td>
+                        <td>XXXXXXXXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通面值：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">有效起始时间：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">有效结束时间：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通描述：</td>
+                        <td><textarea name="description"  cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通额度：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">已发行额度：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr class="set_user_status">
+                        <td class="td_left">设置状态：</td>
+                        <td><input type="radio" name="set_user_status" >冻结用户通&nbsp&nbsp<input type="radio" name="set_user_status" >解冻用户通</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>确定</button><button class="back" id="tong_back">返回</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="useManage" id="apply_manage" style="display: none;">
+            <hr>
+            <div class="left">
+                <ul>
+                    <li class="user" id="user_authentication_selected">用户认证</li>
+                    <li class="tong" id="tong_authentication_selected">用户通认证</li>
+                </ul>
+            </div>
+            <div class="right_users" id="right_users_apply" style="display:block"><!--用户信息-->
+                <table class="users_manage" id="users_apply" style="display: block;">
+                    <tr class="title">
+                        <td>申请时间</td>
+                        <td>用户账号</td>
+                        <td>状态</td>
+                        <td>详情</td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>2016-07-26</td>
+                        <td> jcdfvvbbgfddssbnhh</td>
+                        <td>审核通过</td>
+                        <td><a href="#" class="details_apply">查看</a></td>
+                    </tr>
+                </table>
+                <table class="tongs_manage padding_36" id="tongs_apply" style="display: none">
+                    <tr class="title">
+                        <td>申请时间</td>
+                        <td>申请账号</td>
+                        <td>类型</td>
+                        <td>名称</td>
+                        <td>状态</td>
+                        <td>详情</td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr>
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                    <tr class="back_grey">
+                        <td>测试通</td>
+                        <td>asdfgtfvcddess</td>
+                        <td>融资通</td>
+                        <td>测试</td>
+                        <td>已审核</td>
+                        <td><a href="#" class="tong_details_apply">查看</a></td>
+                    </tr>
+                </table>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#">上一页</a></li>
+                    <li class="num"><a href="#">1</a></li>
+                    <li class="num"><a href="#">2</a></li>
+                    <li class="num"><a href="#">3</a></li>
+                    <li><a href="#">下一页</a></li>
+                    <li><a href="#">尾页</a></li>
+                </ul>
+            </div>
+            <div class="right_user" id="right_user_apply" style="display: none;"><!--用户详细信息-->
+                <p class="title_p">用户认证&nbsp <span>>&nbsp 用户认证详情</span></p>
+                <table>
+                    <tr>
+                        <td class="td_left">用户账号：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">公司名称：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">营业执照号：</td>
+                        <td>XXXXXXXXXXXXXXXXXX <button class="look" >查看营业执照</button><button class="look_out" style="display: none;">收起营业执照</button></td>
+                    </tr>
+                    <tr >
+                        <td></td>
+                        <td><img src="../imgs/logo.png" alt="营业执照"  class="business_license" style="display: none;"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">联系人：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">联系电话：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">企业描述：</td>
+                        <td><textarea name="description" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr class="set_user_status">
+                        <td class="td_left">审核结果：</td>
+                        <td><input type="radio" name="set_user_status" >审核通过&nbsp&nbsp<input type="radio" name="set_user_status" >审核不通过</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>确定</button><button  class="cancel" id="apply_user_cancel">取消</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_tong" id="right_tong_apply" style="display: none;"><!--用户通详细信息-->
+                <p class="title_p">用户通认证&nbsp <span>>&nbsp 用户通认证详情</span></p>
+                <table>
+                    <tr>
+                        <td class="td_left">用户账号：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">公司名称：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通名称：</td>
+                        <td>XXXXXXXXXXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通类型：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通面值：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">有效起始时间：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">有效结束时间：</td>
+                        <td>XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">用户通描述：</td>
+                        <td><textarea name="description" cols="50" rows="10"></textarea></td>
+                    </tr>
+                    <tr class="set_user_status">
+                        <td class="td_left">审核结果：</td>
+                        <td><input type="radio" name="set_user_status" >审核通过&nbsp&nbsp<input type="radio" name="set_user_status" >审核不通过</td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button>确定</button><button class="cancel" id="apply_tong_cancel">取消</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="useManage" id="account_set" style="display: none;">
+            <hr>
+            <div class="left">
+                <ul>
+                    <li class="account" id="account_selected">发通账号</li>
+                    <li class="security" id="security_selected">安全设置</li>
+                </ul>
+            </div>
+            <div class="right_users" id="right_account" style="display:block"><!--用户信息-->
+                <div class="account" id="account_index" style="display: block;">
+                    <p>当前发通账号：<span  style="padding-left:15px;">XXXXXXXXXXXXXXXXXXX</span><input type="text" style="display: none;padding:3px 8px;margin-left:15px;"></p>
+                    <button class="update" id="reset">重置</button>
+                </div>
+                <div class="account" id="account" style="display: none;">
+                    <p>当前发通账号：<span id="current_account" style="padding-left:15px;">XXXXXXXXXXXXXXXXXXX</span><input id="new_account" type="text" style="display: none;padding:3px 8px;margin-left:15px;"></p>
+                    <button class="update" id="update">修改</button>
+                    <button style="display: none" class="update" id="sure">确定</button>
+                </div>
+                <table  id="sets" style="display: none">
+                    <tr>
+                        <td class="bind"><span class="false"></span>绑定邮箱</td>
+                        <td class="status">您未绑定邮箱</td>
+                        <td class="update_sets"><a href="#" id="update_email">修改</a></td>
+
+                    </tr>
+                    <tr>
+                        <td class="bind"><span class="true"></span>绑定手机</td>
+                        <td class="status">已绑定</td>
+                        <td class="update_sets"><a href="#" id="update_tel">修改</a></td>
+
+                    </tr>
+                    <tr>
+                        <td class="bind"><span class="true"></span>登录密码</td>
+                        <td class="status"><span></span>已设置</td>
+                        <td class="update_sets"><a href="#" id="update_secret">重置</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_user" id="set_email" style="display: none;"><!--用户详细信息-->
+                <p class="title_p">安全设置&nbsp <span>>&nbsp 修改绑定邮箱</span></p>
+                <p>您正在为帐户：<span style="color:red;padding:0 5px;">XXXXX</span>修改绑定邮箱</p>
+                <table>
+                    <tr>
+                        <td class="td_left">原邮箱地址：</td>
+                        <td>XXXXXXX@.XXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">发送验证链接到邮箱：</td>
+                        <td><button class="email_send">点击发送</button></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">填写验证码：</td>
+                        <td><input type="text" name="verification_code"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">填写新邮箱：</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">图片验证码：</td>
+                        <td><input type="text"></td>
+                        <td><div class="code" id="email_code"></div>
+                            <a href="#" id="update_email_code">刷新</a></td>
+                    </tr>
+                        <td></td>
+                        <td><button type="submit">确认修改</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_tong" id="set_tel" style="display: none;"><!--用户通详细信息-->
+                <p class="title_p">安全设置&nbsp <span>>&nbsp 修改绑定手机</span></p>
+                <p>您正在为帐户：<span style="color:red;padding:0 5px;">XXXXX</span>修改绑定手机</p>
+                <table>
+                    <tr>
+                        <td class="td_left">原手机号码：</td>
+                        <td>XXXXXXXXXX</td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">短信验证码：</td>
+                        <td><button class="email_send">点击发送</button></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">填写验证码：</td>
+                        <td><input type="text" name="verification_code"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">填写新手机：</td>
+                        <td><input type="email" name="email"></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">图片验证码：</td>
+                        <td><input type="text"></td>
+                        <td><div class="code" id="tel_code"></div>
+                            <a href="#" id="update_tel_code">刷新</a></td>
+                    </tr>
+                    <td></td>
+                    <td><button type="submit">确认修改</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="right_tong" id="set_secret" style="display: none;"><!--用户通详细信息-->
+                <p class="title_p">安全设置&nbsp <span>>&nbsp 重置登录密码</span></p>
+                <p>您正在为帐户：<span style="color:red;padding:0 5px;">XXXXX</span>重置登录密码</p>
+                <table>
+                    <tr>
+                        <td class="td_left">旧登录密码：</td>
+                        <td><input type="password" ></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">新登录密码：</td>
+                        <td><input type="password" ></td>
+                    </tr>
+                    <tr>
+                        <td class="td_left">确认新密码：</td>
+                        <td><input type="password" ></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit">确认修改</button></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-container">
+        <ul>
+            <li class="ul-first"><a href="./about_us.html?user='manage'">关于我们</a></li>
+            <li><a href="./normal_question.html?user='manage'">常见问题</a></li>
+            <li class="ul-last"><a href="./contact_us.html?user='manage'">联系我们</a></li>
+        </ul>
+        <p class="concat">
+            <span>联系我们：</span>
+            <span class="tel">400-800-800</span>
+        </p>
+        <div class="footer-bottom">
+            <span>©<a href="###">井通（北京）科技有限公司</a>版权所有</span>
+            <span> 京ICP备15039961号-3</span>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="../js/index.js"></script>
+</body>
+</html>
